@@ -9,23 +9,21 @@ import javax.persistence.Table;
 @Table(name = "User_Table")
 public class User {
 
-	@Id
-	@GeneratedValue
+	@Id 
 	int id;
-	String name;
+	String uname;
 	String upass;
-	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getUname() {
+		return uname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUname(String uname) {
+		this.uname = uname;
 	}
 	public String getUpass() {
 		return upass;
@@ -35,4 +33,5 @@ public class User {
 	}
 	
 	
+
 }
